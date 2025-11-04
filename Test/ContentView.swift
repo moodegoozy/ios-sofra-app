@@ -1,21 +1,34 @@
-//
-//  ContentView.swift
-//  Test
-//
-//  Created by Tony Parker on 9/16/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var webViewModel = WebViewModel()
+    @StateObject private var locationManager = LocationPermissionManager()
+    @Environment(\.scenePhase) private var scenePhase
+    @State private var hasLoadedInitialURL = false
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        WebView(viewModel: webViewModel)
+            .ignoresSafeArea()
+            .task {
+                guard !hasLoadedInitialURL else { return }
+
+                hasLoadedInitialURL = true
+                locationManager.requestPermissionIfNeeded()
+                webViewModel.load(AppConfiguration.rootURL)
+            }
+            .onChange(of: scenePhase) { newPhase in
+                switch newPhase {
+                case .active:
+                    locationManager.requestPermissionIfNeeded()
+                    if hasLoadedInitialURL {
+                        webViewModel.reload()
+                    }
+                case .inactive, .background:
+                    locationManager.stopUpdatingLocation()
+                default:
+                    break
+                }
+            }
     }
 }
 
