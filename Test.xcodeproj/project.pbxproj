@@ -395,11 +395,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+                                ENABLE_PREVIEWS = YES;
+                                GENERATE_INFOPLIST_FILE = YES;
+                                INFOPLIST_KEY_AppRootURL = https://albayt-sofra.web.app/;
+                                INFOPLIST_KEY_NSAppTransportSecurity = { NSAllowsArbitraryLoads = YES; };
+                                INFOPLIST_KEY_NSCameraUsageDescription = "يحتاج التطبيق إلى الوصول إلى الكاميرا لدعم ميزات الويب مثل التقاط الصور والفيديو.";
+                                INFOPLIST_KEY_NSMicrophoneUsageDescription = "يحتاج التطبيق إلى الوصول إلى الميكروفون لدعم مكالمات الصوت والفيديو داخل تجربة الويب.";
+                                INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "نستخدم موقعك لعرض محتوى وخدمات قريبة منك داخل التطبيق.";
+                                INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "نحتاج إلى حفظ الوسائط التي تقوم بتنزيلها من تجربة الويب داخل ألبوم الصور.";
+                                INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "نحتاج إلى الوصول إلى ألبوم الصور لرفع الوسائط إلى موقع الويب.";
+                                INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+                                INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+                                INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -422,11 +429,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+                                ENABLE_PREVIEWS = YES;
+                                GENERATE_INFOPLIST_FILE = YES;
+                                INFOPLIST_KEY_AppRootURL = https://albayt-sofra.web.app/;
+                                INFOPLIST_KEY_NSAppTransportSecurity = { NSAllowsArbitraryLoads = YES; };
+                                INFOPLIST_KEY_NSCameraUsageDescription = "يحتاج التطبيق إلى الوصول إلى الكاميرا لدعم ميزات الويب مثل التقاط الصور والفيديو.";
+                                INFOPLIST_KEY_NSMicrophoneUsageDescription = "يحتاج التطبيق إلى الوصول إلى الميكروفون لدعم مكالمات الصوت والفيديو داخل تجربة الويب.";
+                                INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "نستخدم موقعك لعرض محتوى وخدمات قريبة منك داخل التطبيق.";
+                                INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "نحتاج إلى حفظ الوسائط التي تقوم بتنزيلها من تجربة الويب داخل ألبوم الصور.";
+                                INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "نحتاج إلى الوصول إلى ألبوم الصور لرفع الوسائط إلى موقع الويب.";
+                                INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+                                INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+                                INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
